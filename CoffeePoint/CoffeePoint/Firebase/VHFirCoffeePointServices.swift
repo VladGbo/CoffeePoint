@@ -6,10 +6,11 @@
 //  Copyright © 2018 Vladyslav Horbenko. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import Firebase
 
-class VHFirCoffeePointServices: NSObject {
+
+class VHFirCoffeePointServices {
     
     
 
