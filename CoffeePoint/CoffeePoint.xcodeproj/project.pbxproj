@@ -14,6 +14,7 @@
 		90A73B7721B5EAD9004475A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90A73B7621B5EAD9004475A2 /* Assets.xcassets */; };
 		90A73B7A21B5EAD9004475A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A73B7821B5EAD9004475A2 /* LaunchScreen.storyboard */; };
 		90A73B8221B5F33F004475A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A73B8121B5F33F004475A2 /* GoogleService-Info.plist */; };
+		90A73B8521B5F53C004475A2 /* VHFirCoffeePointServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A73B8421B5F53C004475A2 /* VHFirCoffeePointServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		90A73B7921B5EAD9004475A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90A73B7B21B5EAD9004475A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90A73B8121B5F33F004475A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		90A73B8421B5F53C004475A2 /* VHFirCoffeePointServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VHFirCoffeePointServices.swift; sourceTree = "<group>"; };
 		FAE9C8D7BE428B04A883F7BB /* Pods-CoffeePoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeePoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeePoint/Pods-CoffeePoint.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				90A73B8121B5F33F004475A2 /* GoogleService-Info.plist */,
+				90A73B8421B5F53C004475A2 /* VHFirCoffeePointServices.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90A73B7221B5EAD7004475A2 /* ViewController.swift in Sources */,
+				90A73B8521B5F53C004475A2 /* VHFirCoffeePointServices.swift in Sources */,
 				90A73B7021B5EAD7004475A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
