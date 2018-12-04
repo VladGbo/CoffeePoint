@@ -8,10 +8,30 @@
 
 import Foundation
 import Firebase
-
+import FirebaseFirestore
 
 class VHFirCoffeePointServices {
     
+    private init () {}
+    static let shared = VHFirCoffeePointServices()
     
-
+    func configure () {
+        FirebaseApp.configure()
+    }
+    
+    func create() {
+        
+    }
+    
+    func read() {
+        
+    }
+    
+    func update() {
+        
+    }
+    
+    func delete() {
+        
+    }
 }
