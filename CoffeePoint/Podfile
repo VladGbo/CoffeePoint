@@ -7,6 +7,6 @@ target 'CoffeePoint' do
 
   # Pods for CoffeePoint
   pod 'Firebase/Core'
-  pod 'Firebase/Firestore'
+  pod 'Firebase/Database'
 
 end
