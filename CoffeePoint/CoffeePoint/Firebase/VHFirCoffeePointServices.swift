@@ -12,7 +12,6 @@ import FirebaseFirestore
 
 class VHFirCoffeePointServices {
     
-    private init () {}
     static let shared = VHFirCoffeePointServices()
     
     func configure () {
