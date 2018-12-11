@@ -9,14 +9,11 @@
 import Foundation
 
 struct CoffeePoint {
-    private static var coffeePointId: Int
     private var listOfDrinks:[TypeOfDrink]
     var readyToPreparing: Bool
     
     init(listOfDrinks:[TypeOfDrink], readyToPreparing:Bool) {
         self.listOfDrinks = listOfDrinks
         self.readyToPreparing = readyToPreparing
-        
-        CoffeePoint.coffeePointId += 1
     }
 }

@@ -8,39 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		197E4D066763758AD5990B6D /* Pods_CoffeePoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DEF14A771E99D1E15372F9 /* Pods_CoffeePoint.framework */; };
-		9023885C21BE35260024854C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023885B21BE35260024854C /* User.swift */; };
 		9023885E21BE38C10024854C /* CoffeePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023885D21BE38C10024854C /* CoffeePoint.swift */; };
 		9023886021BE397A0024854C /* TypeOfDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023885F21BE397A0024854C /* TypeOfDrink.swift */; };
 		9023886221BE6AB10024854C /* VHInfoSystemAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023886121BE6AB10024854C /* VHInfoSystemAlert.swift */; };
 		9023886421BE7FF20024854C /* VHRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023886321BE7FF20024854C /* VHRegistrationViewController.swift */; };
-		9023886721BE80560024854C /* RegistrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023886621BE80560024854C /* RegistrationModel.swift */; };
 		90A73B7021B5EAD7004475A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A73B6F21B5EAD7004475A2 /* AppDelegate.swift */; };
-		90A73B7221B5EAD7004475A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A73B7121B5EAD7004475A2 /* ViewController.swift */; };
+		90A73B7221B5EAD7004475A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A73B7121B5EAD7004475A2 /* LoginViewController.swift */; };
 		90A73B7521B5EAD7004475A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A73B7321B5EAD7004475A2 /* Main.storyboard */; };
 		90A73B7721B5EAD9004475A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90A73B7621B5EAD9004475A2 /* Assets.xcassets */; };
 		90A73B7A21B5EAD9004475A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A73B7821B5EAD9004475A2 /* LaunchScreen.storyboard */; };
 		90A73B8221B5F33F004475A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A73B8121B5F33F004475A2 /* GoogleService-Info.plist */; };
 		90A73B8521B5F53C004475A2 /* VHFirCoffeePointServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A73B8421B5F53C004475A2 /* VHFirCoffeePointServices.swift */; };
+		90F911C221C00EF1006D6235 /* VHPersonalUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F911C121C00EF1006D6235 /* VHPersonalUserInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07DEF14A771E99D1E15372F9 /* Pods_CoffeePoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeePoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5F4DF35CB2AA8C2A69E9C1 /* Pods-CoffeePoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeePoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeePoint/Pods-CoffeePoint.debug.xcconfig"; sourceTree = "<group>"; };
-		9023885B21BE35260024854C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9023885D21BE38C10024854C /* CoffeePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeePoint.swift; sourceTree = "<group>"; };
 		9023885F21BE397A0024854C /* TypeOfDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfDrink.swift; sourceTree = "<group>"; };
 		9023886121BE6AB10024854C /* VHInfoSystemAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VHInfoSystemAlert.swift; sourceTree = "<group>"; };
 		9023886321BE7FF20024854C /* VHRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VHRegistrationViewController.swift; sourceTree = "<group>"; };
-		9023886621BE80560024854C /* RegistrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModel.swift; sourceTree = "<group>"; };
 		90A73B6C21B5EAD7004475A2 /* CoffeePoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeePoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A73B6F21B5EAD7004475A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90A73B7121B5EAD7004475A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		90A73B7121B5EAD7004475A2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		90A73B7421B5EAD7004475A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90A73B7621B5EAD9004475A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90A73B7921B5EAD9004475A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90A73B7B21B5EAD9004475A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90A73B8121B5F33F004475A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		90A73B8421B5F53C004475A2 /* VHFirCoffeePointServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VHFirCoffeePointServices.swift; sourceTree = "<group>"; };
+		90F911C121C00EF1006D6235 /* VHPersonalUserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VHPersonalUserInfoViewController.swift; sourceTree = "<group>"; };
 		FAE9C8D7BE428B04A883F7BB /* Pods-CoffeePoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeePoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeePoint/Pods-CoffeePoint.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				9023886321BE7FF20024854C /* VHRegistrationViewController.swift */,
-				9023886621BE80560024854C /* RegistrationModel.swift */,
 			);
 			path = RegistrationViewController;
 			sourceTree = "<group>";
@@ -106,8 +103,8 @@
 				9023886521BE802E0024854C /* RegistrationViewController */,
 				90A73B8321B5F365004475A2 /* Firebase */,
 				90A73B6F21B5EAD7004475A2 /* AppDelegate.swift */,
-				90A73B7121B5EAD7004475A2 /* ViewController.swift */,
-				9023885B21BE35260024854C /* User.swift */,
+				90F911C121C00EF1006D6235 /* VHPersonalUserInfoViewController.swift */,
+				90A73B7121B5EAD7004475A2 /* LoginViewController.swift */,
 				9023885D21BE38C10024854C /* CoffeePoint.swift */,
 				9023885F21BE397A0024854C /* TypeOfDrink.swift */,
 				9023886121BE6AB10024854C /* VHInfoSystemAlert.swift */,
@@ -122,8 +119,8 @@
 		90A73B8321B5F365004475A2 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				90A73B8121B5F33F004475A2 /* GoogleService-Info.plist */,
 				90A73B8421B5F53C004475A2 /* VHFirCoffeePointServices.swift */,
+				90A73B8121B5F33F004475A2 /* GoogleService-Info.plist */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -259,12 +256,11 @@
 				9023885E21BE38C10024854C /* CoffeePoint.swift in Sources */,
 				9023886421BE7FF20024854C /* VHRegistrationViewController.swift in Sources */,
 				9023886221BE6AB10024854C /* VHInfoSystemAlert.swift in Sources */,
-				9023885C21BE35260024854C /* User.swift in Sources */,
-				90A73B7221B5EAD7004475A2 /* ViewController.swift in Sources */,
+				90F911C221C00EF1006D6235 /* VHPersonalUserInfoViewController.swift in Sources */,
+				90A73B7221B5EAD7004475A2 /* LoginViewController.swift in Sources */,
 				90A73B8521B5F53C004475A2 /* VHFirCoffeePointServices.swift in Sources */,
 				90A73B7021B5EAD7004475A2 /* AppDelegate.swift in Sources */,
 				9023886021BE397A0024854C /* TypeOfDrink.swift in Sources */,
-				9023886721BE80560024854C /* RegistrationModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

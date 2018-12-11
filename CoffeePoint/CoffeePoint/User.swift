@@ -12,14 +12,12 @@ struct User {
     var userName: String
     var userEmail: String
     var userPassword: String
-    private static var userID: Int
     
     init(userName: String, userEmail: String, userPassword: String) {
         self.userName = userName
         self.userEmail = userEmail
         self.userPassword = userPassword
         
-        User.UserID += 1
     }
     
 }
