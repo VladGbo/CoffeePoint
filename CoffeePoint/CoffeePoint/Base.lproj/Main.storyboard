@@ -45,6 +45,9 @@
                                         <state key="normal" title="Log In">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tappedLoginButton:" destination="kvi-Wv-Fr2" eventType="touchUpInside" id="eno-13-FlU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZP-L7-yIf">
                                         <rect key="frame" x="0.0" y="180" width="355" height="30"/>
@@ -70,12 +73,15 @@
                         <viewLayoutGuide key="safeArea" id="36b-bc-dXN"/>
                     </view>
                     <connections>
+                        <outletCollection property="itemsForlogIn" destination="mej-Ry-ZU7" collectionClass="NSMutableArray" id="2d6-un-TKC"/>
+                        <outletCollection property="itemsForlogIn" destination="Txb-rs-Xt4" collectionClass="NSMutableArray" id="vjr-1Y-IhL"/>
                         <segue destination="1eX-3j-ftE" kind="show" identifier="registrationSegue" id="qGv-Xk-FfF"/>
+                        <segue destination="bS8-iC-fnE" kind="show" identifier="segueLoginToUser" id="LoZ-nX-2bx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CvP-OF-gsg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1922" y="84"/>
+            <point key="canvasLocation" x="-1922" y="150"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="Xvp-2t-whZ">
@@ -172,7 +178,6 @@
                         <outlet property="passRepeatTextField" destination="Tj8-1A-1MU" id="jt6-rZ-Gwg"/>
                         <outlet property="passTextField" destination="5TA-qb-ftx" id="LlJ-AY-MhW"/>
                         <outlet property="userNameTextField" destination="dsS-p2-MDX" id="duC-bv-pcV"/>
-                        <segue destination="kvi-Wv-Fr2" kind="show" identifier="segueRegistrationToLogin" id="giN-pU-YsU"/>
                         <segue destination="bS8-iC-fnE" kind="show" identifier="segueRegistrationToUser" id="JVh-rH-C4u"/>
                     </connections>
                 </viewController>
@@ -213,4 +218,7 @@
             <point key="canvasLocation" x="215" y="170"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="LoZ-nX-2bx"/>
+    </inferredMetricsTieBreakers>
 </document>

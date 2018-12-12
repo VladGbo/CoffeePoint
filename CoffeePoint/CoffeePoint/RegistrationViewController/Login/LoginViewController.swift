@@ -10,13 +10,22 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet var itemsForlogIn: [UITextField]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     @IBAction func pressOnButtonRegistration(_ sender: UIButton) {
+
+
         self.performSegue(withIdentifier: "registrationSegue", sender: nil)
+    }
+    @IBAction func tappedLoginButton(_ sender: UIButton) {
+        
+
+        
+        //        var login = LoginModel(userName: <#T##String#>, password: <#T##String#>)
     }
 }
 

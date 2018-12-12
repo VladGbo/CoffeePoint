@@ -19,6 +19,7 @@
 		90A73B7A21B5EAD9004475A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A73B7821B5EAD9004475A2 /* LaunchScreen.storyboard */; };
 		90A73B8221B5F33F004475A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A73B8121B5F33F004475A2 /* GoogleService-Info.plist */; };
 		90A73B8521B5F53C004475A2 /* VHFirCoffeePointServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A73B8421B5F53C004475A2 /* VHFirCoffeePointServices.swift */; };
+		90EF739921C0928C00703802 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF739821C0928C00703802 /* LoginModel.swift */; };
 		90F911C221C00EF1006D6235 /* VHPersonalUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F911C121C00EF1006D6235 /* VHPersonalUserInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		90A73B7B21B5EAD9004475A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90A73B8121B5F33F004475A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		90A73B8421B5F53C004475A2 /* VHFirCoffeePointServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VHFirCoffeePointServices.swift; sourceTree = "<group>"; };
+		90EF739821C0928C00703802 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		90F911C121C00EF1006D6235 /* VHPersonalUserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VHPersonalUserInfoViewController.swift; sourceTree = "<group>"; };
 		FAE9C8D7BE428B04A883F7BB /* Pods-CoffeePoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeePoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeePoint/Pods-CoffeePoint.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				9023886321BE7FF20024854C /* VHRegistrationViewController.swift */,
+				90EF739721C0924000703802 /* Login */,
+				90A73B8321B5F365004475A2 /* Firebase */,
 			);
 			path = RegistrationViewController;
 			sourceTree = "<group>";
@@ -101,10 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				9023886521BE802E0024854C /* RegistrationViewController */,
-				90A73B8321B5F365004475A2 /* Firebase */,
 				90A73B6F21B5EAD7004475A2 /* AppDelegate.swift */,
 				90F911C121C00EF1006D6235 /* VHPersonalUserInfoViewController.swift */,
-				90A73B7121B5EAD7004475A2 /* LoginViewController.swift */,
 				9023885D21BE38C10024854C /* CoffeePoint.swift */,
 				9023885F21BE397A0024854C /* TypeOfDrink.swift */,
 				9023886121BE6AB10024854C /* VHInfoSystemAlert.swift */,
@@ -123,6 +125,15 @@
 				90A73B8121B5F33F004475A2 /* GoogleService-Info.plist */,
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		90EF739721C0924000703802 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				90A73B7121B5EAD7004475A2 /* LoginViewController.swift */,
+				90EF739821C0928C00703802 /* LoginModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 				9023886421BE7FF20024854C /* VHRegistrationViewController.swift in Sources */,
 				9023886221BE6AB10024854C /* VHInfoSystemAlert.swift in Sources */,
 				90F911C221C00EF1006D6235 /* VHPersonalUserInfoViewController.swift in Sources */,
+				90EF739921C0928C00703802 /* LoginModel.swift in Sources */,
 				90A73B7221B5EAD7004475A2 /* LoginViewController.swift in Sources */,
 				90A73B8521B5F53C004475A2 /* VHFirCoffeePointServices.swift in Sources */,
 				90A73B7021B5EAD7004475A2 /* AppDelegate.swift in Sources */,

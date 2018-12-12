@@ -80,6 +80,7 @@ class VHRegistrationViewController: UIViewController {
     }
 
     @IBAction func pressOnCancelButton(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "segueRegistrationToLogin", sender: nil)
+//        self.performSegue(withIdentifier: "segueRegistrationToLogin", sender: nil)
+        dismiss(animated: true, completion: nil)
     }
 }
