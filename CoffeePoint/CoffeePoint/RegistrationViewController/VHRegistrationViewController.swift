@@ -17,44 +17,42 @@ class VHRegistrationViewController: UIViewController {
     @IBOutlet weak var passTextField: UITextField!
     @IBOutlet weak var passRepeatTextField: UITextField!
     
+    private var errorText: String = ""{
+        didSet {
+            VHInfoSystemAlert.errorInfo(title: "ERROR", message: errorText, viewController: self)
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    
+    @IBAction func hideKey(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
     
     @IBAction func pressOnSignUpButton(_ sender: UIButton) {
         guard let userName = self.userNameTextField.text else {
-            VHInfoSystemAlert.alertSystemInfo(title: "ERROR",
-                                            message: "Incorrect user name",
-                                     viewController: self)
+            self.errorText = "Incorrect user name"
             return
         }
         guard let email = self.emailTextField.text else {
-            VHInfoSystemAlert.alertSystemInfo(title: "ERROR",
-                                            message: "Incorrect email",
-                                     viewController: self)
+            self.errorText = "Incorrect email"
             return
         }
         guard let pass = self.passTextField.text else {
-            VHInfoSystemAlert.alertSystemInfo(title: "ERROR",
-                                            message: "Insert password",
-                                     viewController: self)
+            self.errorText = "Insert password"
             return
         }
         guard let passRepeat = self.passRepeatTextField.text else {
-            VHInfoSystemAlert.alertSystemInfo(title: "ERROR",
-                                            message: "Repeat password",
-                                     viewController: self)
+            self.errorText = "Repeat password"
             return
         }
         if pass == passRepeat, !userName.isEmpty{
             Auth.auth().createUser(withEmail: email, password: pass) { (user, error) in
                 guard error == nil else {
-                    VHInfoSystemAlert.alertSystemInfo(title: "ERROR",
-                                                    message: error?.localizedDescription ?? "",
-                                             viewController: self)
+                    self.errorText = error?.localizedDescription ?? ""
                     return
                 }
                 guard let us = user else { return }
@@ -62,9 +60,7 @@ class VHRegistrationViewController: UIViewController {
                 changeRequest.displayName = userName
                 changeRequest.commitChanges(completion: { (error) in
                     guard error == nil else {
-                        VHInfoSystemAlert.alertSystemInfo(title: "ERROR",
-                                                        message: error?.localizedDescription ?? "",
-                                                 viewController: self)
+                        self.errorText = error?.localizedDescription ?? ""
                         return
                     }
                 })
@@ -72,15 +68,12 @@ class VHRegistrationViewController: UIViewController {
             }
             
         } else {
-            VHInfoSystemAlert.alertSystemInfo(title: "ERROR",
-                                            message: "Passwords not equal each other, or didn't insert user name",
-                                     viewController: self)
+            self.errorText = "Passwords not equal each other, or didn't insert user name"
         }
-
     }
 
     @IBAction func pressOnCancelButton(_ sender: UIButton) {
-//        self.performSegue(withIdentifier: "segueRegistrationToLogin", sender: nil)
+
         dismiss(animated: true, completion: nil)
     }
 }

@@ -11,11 +11,14 @@ import Firebase
 
 class VHPersonalUserInfoViewController: UIViewController {
     
-    var user: User?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
-    
+    @IBAction func tappedLeftBarButton(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
 }

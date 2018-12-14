@@ -10,7 +10,7 @@ import UIKit
 
 class VHInfoSystemAlert: NSObject {
 
-    static func alertSystemInfo(title:String, message: String, viewController:UIViewController) {
+    static func errorInfo(title:String, message: String, viewController:UIViewController) {
         let alertController:UIAlertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(action)
