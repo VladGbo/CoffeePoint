@@ -10,6 +10,8 @@
 		197E4D066763758AD5990B6D /* Pods_CoffeePoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DEF14A771E99D1E15372F9 /* Pods_CoffeePoint.framework */; };
 		9023886221BE6AB10024854C /* VHInfoSystemAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023886121BE6AB10024854C /* VHInfoSystemAlert.swift */; };
 		9023886421BE7FF20024854C /* VHRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023886321BE7FF20024854C /* VHRegistrationViewController.swift */; };
+		9030812521C53A81006636CA /* VHDetaileDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030812421C53A81006636CA /* VHDetaileDrinkViewController.swift */; };
+		9030812821C57F70006636CA /* VHDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030812721C57F70006636CA /* VHDetailsModel.swift */; };
 		90A73B7021B5EAD7004475A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A73B6F21B5EAD7004475A2 /* AppDelegate.swift */; };
 		90A73B7221B5EAD7004475A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A73B7121B5EAD7004475A2 /* LoginViewController.swift */; };
 		90A73B7521B5EAD7004475A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A73B7321B5EAD7004475A2 /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 		0D5F4DF35CB2AA8C2A69E9C1 /* Pods-CoffeePoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeePoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeePoint/Pods-CoffeePoint.debug.xcconfig"; sourceTree = "<group>"; };
 		9023886121BE6AB10024854C /* VHInfoSystemAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VHInfoSystemAlert.swift; sourceTree = "<group>"; };
 		9023886321BE7FF20024854C /* VHRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VHRegistrationViewController.swift; sourceTree = "<group>"; };
+		9030812421C53A81006636CA /* VHDetaileDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VHDetaileDrinkViewController.swift; sourceTree = "<group>"; };
+		9030812721C57F70006636CA /* VHDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VHDetailsModel.swift; sourceTree = "<group>"; };
 		90A73B6C21B5EAD7004475A2 /* CoffeePoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeePoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A73B6F21B5EAD7004475A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90A73B7121B5EAD7004475A2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -71,8 +75,18 @@
 			isa = PBXGroup;
 			children = (
 				9023886321BE7FF20024854C /* VHRegistrationViewController.swift */,
+				9030812621C57EEB006636CA /* DaetailsDrink */,
 			);
 			path = RegistrationViewController;
+			sourceTree = "<group>";
+		};
+		9030812621C57EEB006636CA /* DaetailsDrink */ = {
+			isa = PBXGroup;
+			children = (
+				9030812421C53A81006636CA /* VHDetaileDrinkViewController.swift */,
+				9030812721C57F70006636CA /* VHDetailsModel.swift */,
+			);
+			path = DaetailsDrink;
 			sourceTree = "<group>";
 		};
 		90A73B6321B5EAD7004475A2 = {
@@ -256,8 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9023886421BE7FF20024854C /* VHRegistrationViewController.swift in Sources */,
+				9030812521C53A81006636CA /* VHDetaileDrinkViewController.swift in Sources */,
 				9023886221BE6AB10024854C /* VHInfoSystemAlert.swift in Sources */,
 				90F911C221C00EF1006D6235 /* VHPersonalUserInfoViewController.swift in Sources */,
+				9030812821C57F70006636CA /* VHDetailsModel.swift in Sources */,
 				90A73B7221B5EAD7004475A2 /* LoginViewController.swift in Sources */,
 				90A73B8521B5F53C004475A2 /* VHFirCoffeePointServices.swift in Sources */,
 				90A73B7021B5EAD7004475A2 /* AppDelegate.swift in Sources */,

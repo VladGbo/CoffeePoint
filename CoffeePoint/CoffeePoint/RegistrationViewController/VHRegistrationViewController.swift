@@ -11,7 +11,7 @@ import Firebase
 
 
 class VHRegistrationViewController: UIViewController {
-
+    
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passTextField: UITextField!
@@ -64,16 +64,17 @@ class VHRegistrationViewController: UIViewController {
                         return
                     }
                 })
-                    self.performSegue(withIdentifier: "segueRegistrationToUser", sender: nil)
+                
+                self.dismiss(animated: true, completion: nil)
             }
             
         } else {
             self.errorText = "Passwords not equal each other, or didn't insert user name"
         }
     }
-
+    
     @IBAction func pressOnCancelButton(_ sender: UIButton) {
-
+        
         dismiss(animated: true, completion: nil)
     }
 }
