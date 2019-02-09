@@ -1,0 +1,16 @@
+{% extends 'coffeeStartApp/base_blog.html' %}
+{% load i18n %}
+{% block title %}
+  Видалити  - {{ block.super }}
+{% endblock %}
+{% block content %}
+
+  <form action="{{ obj.get_delete_url }}" method="post">
+    {% csrf_token %}
+
+    <h3>{% trans "Are you sure you want to delete this data?" %}</h3>
+    <a href="{{ obj.get_absolute_url }}">{% trans "Cancel" %}</a>
+    <button type="submit" class="btn btn-danger">{% trans "Delete" %}</button>
+  </form>
+
+{% endblock %}

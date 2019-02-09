@@ -1,0 +1,56 @@
+{% extends 'coffeeStartApp/base_blog.html' %}
+{% load i18n %}
+{% block title %}
+  {{ obj.title }} - {{ block.super }}
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="mb-5">
+    {{ obj.title }}
+  </h1>
+  <p>{{ obj.address }}</p>
+  <p>
+    {% if obj.is_worked  %}
+    <p>{% trans "Status:working" %}</p>
+    {% else %}
+    <p>{% trans "Status:non-working" %}</p>
+    {% endif %}
+
+
+  <p>{% trans "Quantity:" %}{{obj.count }}</p>
+  {% if user.is_authenticated %}
+<form class="" action="{% url 'clear_count' %}" method="post">
+  {% csrf_token %}
+
+<button class="btn btn-primary" type="submit" name="group_id" value='{{ obj.id }}'>{% trans "Reset" %}</button>
+{% endif %}
+<p>{% trans "Order:" %}
+
+</p>
+<table class="table table-lg table-bordered table-hover w-50">
+    <thead class="thead-light">
+    <tr>
+        <th scope="col" style="width:10%">№</th>
+        <th scope="col" style="width:40%">{% trans "Type of drink" %}</th>
+        <th scope="col" style="width:25%">{% trans "User" %}</th>
+    </tr>
+    </thead>
+    <tbody>
+      {% for order in orders %}
+
+        <tr>
+            <th scope="row"><a href="{{ order.get_absolute_url }}">{{ order.id }}</a></th>
+            <td>{{ order.typeofdrink }}</td>
+            <td>{{ order.user }}</td>
+
+
+        </tr>
+      {% endfor %}
+
+
+
+    </tbody>
+</table>
+
+  {% endblock %}

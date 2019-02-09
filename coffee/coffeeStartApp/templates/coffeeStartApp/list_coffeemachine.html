@@ -1,0 +1,15 @@
+{% extends 'coffeeStartApp/base_blog.html' %}
+{% load i18n %}
+{% block title %}
+   Список - {{ block.super }}
+{% endblock %}
+
+
+{% block content %}
+    <h1 class="mb-5">{% trans "Coffee machines" %}</h1>
+
+    {% for group in coffeemachines %}
+      <p><a href="{{ group.get_absolute_url }}">{{ group.title }}</a></p>
+    {% endfor %}
+
+{% endblock %}

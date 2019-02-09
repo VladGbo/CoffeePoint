@@ -1,0 +1,14 @@
+{% extends 'coffeeStartApp/base_blog.html' %}
+
+{% block title %}
+  {{ obj.title }} - {{ block.super }}
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="mb-5">
+    {{ obj.title }}
+  </h1>
+
+
+  {% endblock %}
