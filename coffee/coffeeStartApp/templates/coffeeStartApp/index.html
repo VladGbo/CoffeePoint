@@ -1,0 +1,43 @@
+{% extends "coffeeStartApp/base_blog.html" %}
+{% load i18n %}
+{% block content %}
+<div class="row">
+  <div class="col-9">
+    <h1 class="mb-5">{% trans "Coffee machines" %}</h1>
+    <table class="table table-lg table-bordered table-hover w-50">
+        <thead class="thead-light">
+        <tr>
+            <th scope="col" style="width:10%">№</th>
+            <th scope="col" style="width:40%">{% trans "Name" %}</th>
+            <th scope="col" style="width:25%">{% trans "Address" %}</th>
+        </tr>
+        </thead>
+        <tbody>
+          {% for order in filter.qs %}
+
+            <tr>
+                <th scope="row"><a href="{{ order.get_absolute_url }}">{{ order.id }}</a></th>
+                <td><a href="{{ order.get_absolute_url }}"></a>{{ order.title }}</td>
+                <td>{{ order.address }}</td>
+
+
+            </tr>
+          {% endfor %}
+
+
+
+        </tbody>
+    </table>
+
+  </div>
+  <div class="col-3">
+    <h5 class="mb-5 mt-5">{% trans "Filterability for workability" %}</h5>
+      <form method="get">
+          <div class="form-group">
+            {{ filter.form.as_p }}
+          </div>
+          <button class="btn btn-primary" type="submit">{% trans "Search" %}</button>
+        </form>
+  </div>
+</div>
+{% endblock %}

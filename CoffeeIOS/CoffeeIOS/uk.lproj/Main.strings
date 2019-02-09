@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "Реєстрація"; ObjectID = "2ry-NZ-dxP"; */
+"2ry-NZ-dxP.text" = "Реєстрація";
+
+/* Class = "UITextField"; placeholder = "Назва користувача"; ObjectID = "4zN-wd-GNa"; */
+"4zN-wd-GNa.placeholder" = "Назва користувача";
+
+/* Class = "UITextView"; text = "Натиснути для вибору..."; ObjectID = "5yh-Za-IWK"; */
+"5yh-Za-IWK.text" = "Натиснути для вибору...";
+
+/* Class = "UITextView"; text = "Прагнення до досконалої кави, вивчення і побудова істинно правильних процесів на всіх етапах нашої справи, за принципом – «все має значення»."; ObjectID = "6uc-uE-XTH"; */
+"6uc-uE-XTH.text" = "Прагнення до досконалої кави, вивчення і побудова істинно правильних процесів на всіх етапах нашої справи, за принципом – «все має значення».";
+
+/* Class = "UITextField"; placeholder = "Електронна пошта"; ObjectID = "9WL-Dk-E8c"; */
+"9WL-Dk-E8c.placeholder" = "Електронна пошта";
+
+/* Class = "UIButton"; normalTitle = "Зареєструватися"; ObjectID = "GDO-Od-1N7"; */
+"GDO-Od-1N7.normalTitle" = "Зареєструватися";
+
+/* Class = "UIButton"; normalTitle = "Відміна"; ObjectID = "GKs-cf-gnk"; */
+"GKs-cf-gnk.normalTitle" = "Відміна";
+
+/* Class = "UITextField"; placeholder = "Пароль"; ObjectID = "Mme-91-eaL"; */
+"Mme-91-eaL.placeholder" = "Пароль";
+
+/* Class = "UITextField"; placeholder = "Пароль"; ObjectID = "ToF-bG-kjB"; */
+"ToF-bG-kjB.placeholder" = "Пароль";
+
+/* Class = "UILabel"; text = "Авторизація"; ObjectID = "c6t-LZ-ZaW"; */
+"c6t-LZ-ZaW.text" = "Авторизація";
+
+/* Class = "UIButton"; normalTitle = "Приготувати"; ObjectID = "cUl-8d-jC7"; */
+"cUl-8d-jC7.normalTitle" = "Приготувати";
+
+/* Class = "UIButton"; normalTitle = "Увійти"; ObjectID = "k4Y-4S-Kbh"; */
+"k4Y-4S-Kbh.normalTitle" = "Увійти";
+
+/* Class = "UIButton"; normalTitle = "Зареєструватися"; ObjectID = "tiq-La-ySV"; */
+"tiq-La-ySV.normalTitle" = "Зареєструватися";
+
+/* Class = "UIButton"; normalTitle = "◀︎◀︎"; ObjectID = "uGZ-h3-icc"; */
+"uGZ-h3-icc.normalTitle" = "◀︎◀︎";
+
+/* Class = "UITextField"; placeholder = "Підтвердити пароль"; ObjectID = "xJc-qL-R3S"; */
+"xJc-qL-R3S.placeholder" = "Підтвердити пароль";
+
+/* Class = "UITextField"; placeholder = "Назва користувача"; ObjectID = "xZK-G6-hv1"; */
+"xZK-G6-hv1.placeholder" = "Назва користувача";

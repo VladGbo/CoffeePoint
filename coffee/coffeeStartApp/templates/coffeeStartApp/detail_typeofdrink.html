@@ -1,0 +1,17 @@
+{% extends 'coffeeStartApp/base_blog.html' %}
+{% load i18n %}
+{% block title %}
+  {{ obj.title }} - {{ block.super }}
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="mb-5">
+    {{ obj.title }}
+  </h1>
+<p>{% trans "Cost:" %}{{ obj.cost }}</p>
+{% trans "Recipe:" %}
+{% for o in obj.recepts.all %}
+  {{o.title}},
+  {% endfor %}
+  {% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'coffeeStartApp/base_blog.html' %}
+{% load i18n %}
+{% block title %}
+   Список - {{ block.super }}
+{% endblock %}
+
+
+{% block content %}
+    <h1 class="mb-5">{% trans "Type of drinks" %}</h1>
+    <table class="table table-lg table-bordered table-hover w-50">
+        <thead class="thead-light">
+        <tr>
+            <th scope="col" style="width:10%">#</th>
+            <th scope="col" style="width:20%">{% trans "Name" %}</th>
+            <th scope="col" style="width:25%">{% trans "Cost" %}</th>
+
+
+        </tr>
+        </thead>
+        <tbody>
+          {% for order in typeofdrinks %}
+
+            <tr>
+                <th scope="row"><a href="{{ order.get_absolute_url }}">{{ order.id }}</a></th>
+                <td>{{ order.title }}</td>
+                <td>{{ order.cost }}</td>
+                
+
+
+            </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+
+
+{% endblock %}

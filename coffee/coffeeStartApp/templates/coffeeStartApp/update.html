@@ -1,0 +1,32 @@
+{% extends 'coffeeStartApp/base_blog.html' %}
+{% load i18n %}
+{% block title %}
+  Змінити - {{ block.super }}
+{% endblock %}
+
+{% block content %}
+
+  <form class="" action="{{ obj.get_update_url }}"enctype="multipart/form-data" method="post">
+    {% csrf_token %}
+
+    {% for field in form %}
+        <div class="form-group">
+          {% if field.errors %}
+            <div class="alert alert-danger">
+              {{ field.errors }}
+
+            </div>
+
+          {% endif %}
+
+
+          {{ field.label }}
+          {{ field }}
+        </div>
+
+    {% endfor %}
+    <button type="submit" class="btn btn-primary">{% trans "Update" %}</button>
+  </form>
+
+
+  {% endblock %}

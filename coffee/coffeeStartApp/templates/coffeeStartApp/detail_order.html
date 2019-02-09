@@ -1,0 +1,16 @@
+{% extends 'coffeeStartApp/base_blog.html' %}
+{% load i18n %}
+{% block title %}
+  {{ obj.title }} - {{ block.super }}
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="mb-5">
+    {{ obj.id }}:{{ obj.coffeemachine }}
+  </h1>
+  <p>{% trans "Client:" %} {{ obj.user }}</p>
+  <p>{% trans "Type of drink:" %} {{ obj.typeofdrink }}</p>
+
+
+  {% endblock %}
